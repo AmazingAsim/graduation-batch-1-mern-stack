@@ -1,0 +1,36 @@
+/* inline css
+internal css
+external css */
+
+#listitem{
+    background-color: aqua;
+}
+
+
+.dif{
+    background-color: red;
+}
+li{
+    background-color: yellow;
+}
+
+#firstrow td{
+    color:blue;
+}
+
+input[type="password"]{
+    background-color: red;
+}
+
+
+#box>p{
+ background-color: green;
+}
+
+#fg+p{
+    background-color: brown;
+}
+
+#sec ~ li{
+   background-color: blueviolet !important;
+}

@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+@media screen and (width<600px) {
+    nav{
+        width: 100%;
+    }
+}
+
+body{
+    background-color: black;
+    color: white;
+   
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(255,255,255,0.8);
+    font-weight: bolder;
+}
+nav a:hover{
+    color: white;
+}
+
+nav,ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:10px;
+}
+
+nav img{
+    width: 1.6vw;
+    border-radius: 50%;
+    margin-left: 10px;
+
+}
+nav{
+    background-color: black;
+    width: 60%;
+    margin:5px auto;
+    padding:10px;
+    border-radius: 10px;
+    position:sticky;
+    top: 20px;
+    margin-top: 30px;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+}
+nav button{
+    background-color: transparent;
+    color:white;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.rounded{
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin:0px 20px;
+    border:none;
+}
+
+.rounded:hover{
+    transform: scale(1.2);
+    background-color: white;
+   
+}
+
+.btn-trans{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border:none;
+}
+
+header{
+    width: 90%;
+    padding:20px;
+    margin: auto;
+    padding: 20px;
+    background:url('https://media.gq-magazine.co.uk/photos/65df5ad4a4ceaee4427fbc0e/16:9/w_1920,h_1080,c_limit/GQ0324_Three%20Body%20Project_Online_Header.jpg');
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.h-info{
+    position: absolute;
+    bottom: 20px;
+}
+
+.flexboxspec{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+    overflow-x: scroll;
+    align-items: center;
+}
+.box{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.flexboxspec img{
+    height: 150px;
+    border-radius: 10px;
+}
+
+.flexboxspec img:hover{
+    box-shadow: 0px 0px 10px white;
+    transform: scale(1.1);
+}
+.flexboxspec::-webkit-scrollbar{
+    display: none;
+}
