@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to The Bookstore</h1>
+
+    <form action="/books/addbook" method="post" target="_blank">
+        <input type="text" placeholder="Book Name" name="book_name"><br>
+        <input type="number" placeholder="Book Price" name="book_price"><br>
+        <input type="text" placeholder="Book Author" name="book_author"><br>
+        <textarea name="book_desc"  rows="5" placeholder="Book description"></textarea>
+        <input type="file" name="book_image"> <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
