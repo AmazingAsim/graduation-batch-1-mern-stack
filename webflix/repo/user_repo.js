@@ -1,7 +1,7 @@
 const userModel = require('../model/user_model');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const {ObjectId} = require('mongodb');
+let {ObjectId} = require('mongodb');
 
 
 async function signUp(user){
@@ -44,7 +44,7 @@ let currentUser = (email)=>{
 }
 
 let addProfile = (id,profileImage)=>{
-    return userModel.updateOne({_id:new ObjectId(id)},{user_profile:profileImage})
+    return userModel.updateOne({_id:(id)},{user_profile:profileImage})
 }
 
 module.exports = {showUser,signUp,login,currentUser,addProfile}

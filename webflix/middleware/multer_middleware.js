@@ -6,7 +6,7 @@ let storage = multer.diskStorage({
         cb(null,'./profiles')
     },
     filename:function(req,file,cb){
-        cb(null,req.body.id+path.extname(file.originalname))
+        cb(null,req.body._id+path.extname(file.originalname))
     }
 })
 
