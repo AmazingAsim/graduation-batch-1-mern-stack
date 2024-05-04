@@ -44,7 +44,7 @@ let currentUser = (email)=>{
 }
 
 let addProfile = (id,profileImage)=>{
-    return userModel.updateOne({_id:ObjectId(id)},{user_profile:profileImage})
+    return userModel.updateOne({_id:new ObjectId(id)},{user_profile:profileImage})
 }
 
 module.exports = {showUser,signUp,login,currentUser,addProfile}

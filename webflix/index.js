@@ -3,9 +3,10 @@ let express = require('express');
 let dbConnect = require('./config/database');
 let userRouter = require('./router/user_routes')
 let cors = require('cors');
+let cookieParser = require('cookie-parser');
 dbConnect();
 let app = express();
-
+app.use(cookieParser());
 app.use(cors({
     origin:"*",
     methods:['GET','POST','DELETE','PUT','PATCH']

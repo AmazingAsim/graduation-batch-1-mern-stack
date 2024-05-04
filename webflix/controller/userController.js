@@ -4,7 +4,7 @@ let path = require('path');
 let getusers = async(req,res)=>{
     try {
         let result = await userRepo.showUser();
-        return result;
+        res.send(result);
     } catch (err) {
         console.log(err)
     }
@@ -31,7 +31,7 @@ let login = async(req,res)=>{
             res.send({message:'invalid password or email',res:result,validLogin:false})
         }
 
-        res.cookies('jwt',result);
+        res.cookie('jwt',result);
         res.send({message:"Login successfull",validLogin:true,email:user.user_email})
 
 }
