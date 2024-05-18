@@ -1,0 +1,19 @@
+@import url('../node_modules/bootstrap');
+
+
+img{
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 3px 3px 10px gray;
+  animation: flip 0.5s;
+}
+
+
+@keyframes flip {
+  from{
+    transform: rotateX(0deg);
+  }
+  to{
+    transform: rotateX(720deg);
+  }
+}
