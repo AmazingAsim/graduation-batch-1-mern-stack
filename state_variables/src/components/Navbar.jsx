@@ -7,6 +7,7 @@ export default function Navbar() {
         <Link to={'./users/2'}>User 2</Link> 
         <Link to={'./users/3'}>User 3</Link> 
         <Link to={'./feedback'}>Feedback</Link>
+        
     </div>
   )
 }
