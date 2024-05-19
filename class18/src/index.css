@@ -1,7 +1,7 @@
 @import url('../node_modules/bootstrap');
 
 
-img{
+.coinImage{
   border-radius: 50%;
   margin: 10px;
   box-shadow: 3px 3px 10px gray;
@@ -16,4 +16,9 @@ img{
   to{
     transform: rotateX(720deg);
   }
+}
+
+.card-img-top{
+  height: 300px;
+  object-fit: cover;
 }

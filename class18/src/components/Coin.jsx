@@ -26,8 +26,8 @@ export default function Coin() {
         <h1 className='display-2 text-center bg-secondary text-light p-2'>Flip The Coin..</h1>
         {
             flag=="heads"
-            ? <img ref={imgbox} src="heads.png" alt="heads" />
-            : <img ref={imgbox} src="tails.png" alt="tails"/>
+            ? <img className='coinImage' ref={imgbox} src="heads.png" alt="heads" />
+            : <img className='coinImage' ref={imgbox} src="tails.png" alt="tails"/>
         }
         <br/>
         <button onClick={play} className='btn btn-secondary'>Flip The Coin</button>
