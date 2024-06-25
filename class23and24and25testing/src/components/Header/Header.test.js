@@ -40,6 +40,14 @@ test('get by all by the role of li',()=>{
     const liElement =  screen.getAllByRole('listitem')
     expect(liElement.length).toBe(3);
 })
+
+
+test('check if props renders or not',()=>{
+    render(<Header topic="Run" />);
+    const paraElement = screen.getByTestId('topicbox')
+    expect(paraElement).toBeInTheDocument();
+})
+
 })
 
 describe('find methods',()=>{
